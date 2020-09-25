@@ -1,59 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <title>Cursos online</title>
 </head>
-<body style="text-align:center;">
-    <h1 class="titulo" style="background-color:whitesmoke; color:grey; text-align:center;">Udamy Cursos Online</h1>
 
-    <p class="curso1">Marketing Digital
-        <br>
-        <img class="img" src="img/Empresas-de-Marketing-Digital2.jpg">
-        <br>&#9997; Descrição: Explicações sobre ações de comunicação que as empresas podem utilizar por meio da internet, da telefonia celular e outros meios digitais, para assim divulgar e comercializar seus produtos.
-        <br>&#8987; Duração: 2 anos
-        <br>💲 Valor: R$ 150,00 por mês
-        <br><br><button class="inscrever">&#8594 Inscrever-se &#8592</button>
-    </p>
+<body>
+    <h1 class="bg-light text-muted text-center">Udamy Cursos Online</h1>
 
-    <p class="curso2">Empreendedorismo
-        <br>
-        <img class="img" src="img/Empreendedorismo.png">
-        <br>&#9997; Descrição: Empreendedorismo é a capacidade de identificar oportunidades; organizar, coordenar, ter iniciativa para novos negócios e desenvolver mudanças relacionadas a uma empresa, projeto ou outro empreendimento.
-        <br>&#8987; Duração: 1 ano e 6 meses
-        <br>💲 Valor: R$ 100,000 por mês
-        <br><br><button class="inscrever">&#8594 Inscrever-se &#8592</button>
-    </p>
-    <p class="curso3">Economia
-        <br>
-        <img class="img" src="img/Economia.jpg">
-        <br>&#9997; Descrição: Este curso atrai quem gosta de matérias como História e Geografia, tem curiosidade sobre como a sociedade se organiza economicamente e também possui afinidade com a Matemática.
-        <br>&#8987; Duração: 4 anos
-        <br>💲 Valor: R$ 500,00 por mês
-        <br><br><button class="inscrever">&#8594 Inscrever-se &#8592</button>
-    </p>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-2,4 text-center text-monospace border border-dark bg-light bg-light ml-1 mt-1">
+                <p>Marketing Digital
+                    <br>
+                    <img class="img" src="img/Empresas-de-Marketing-Digital2.jpg">
+                    <br>&#9997; Descrição: Explicações sobre ações de comunicação que as empresas podem utilizar por
+                    meio da
+                    internet, da telefonia celular e outros meios digitais, para assim divulgar e comercializar seus
+                    produtos.
+                    <br>&#8987; Duração: 2 anos
+                    <br>💲 Valor: R$ 150,00 por mês
+                    <br><br><button class="inscrever" onclick="funcaoInscreve()">&#8594 Inscrever-se &#8592</button>
+                </p>
+            </div>
 
-    <p class="curso4">Gestão Comercial
-        <br>
-        <img class="img" src="img/sistema-de-gestao-comercial.png">
-        <br>&#9997; Descrição: Curso focado no planejamento financeiro, econômico e tributário das organizações, cuidar da imagem da empresa no mercado, definir estratégias de venda de produtos e serviços.
-        <br>&#8987; Duração: 3 anos
-        <br>💲 Valor: R$ 400,00 por mês
-        <br><br><button class="inscrever">&#8594 Inscrever-se &#8592</button>
-    </p>
+            <div class="col-2,4 text-center text-monospace border border-dark bg-light ml-1 mt-1">
+                <p> Empreendedorismo
+                    <br>
+                    <img class="img" src="img/Empreendedorismo.png">
+                    <br>&#9997; Descrição: Empreendedorismo é a capacidade de identificar oportunidades; organizar,
+                    coordenar, ter iniciativa para novos negócios e desenvolver mudanças relacionadas a uma empresa,
+                    projeto
+                    ou outro empreendimento.
+                    <br>&#8987; Duração: 1 ano e 6 meses
+                    <br>💲 Valor: R$ 100,000 por mês
+                    <br><br><button class="inscrever" onclick="funcaoInscreve()">&#8594 Inscrever-se &#8592</button>
+                </p>
+            </div>
+            <div class="col-2,4 text-center text-monospace border border-dark bg-light ml-1 mt-1">
+                <p>Economia
+                    <br>
+                    <img class="img" src="img/Economia.jpg">
+                    <br>&#9997; Descrição: Este curso atrai quem gosta de matérias como História e Geografia, tem
+                    curiosidade sobre como a sociedade se organiza economicamente e também possui afinidade com a
+                    Matemática.
+                    <br>&#8987; Duração: 4 anos
+                    <br>💲 Valor: R$ 500,00 por mês
+                    <br><br><button class="inscrever" onclick="funcaoInscreve()">&#8594 Inscrever-se &#8592</button>
+                </p>
+            </div>
 
-    <p class="curso5">Propaganda
-        <br>
-        <img class="img" src="img/marketing-publicidade-e-propaganda.jpg">
-        <br>&#9997; Descrição: O curso ensina um modo específico sistemático de persuadir visando influenciar com fins ideológicos, políticos as emoções, atitudes, opiniões ou ações do público alvo. 
-        <br>&#8987; Duração: 2 anos e 7 meses
-        <br>💲 Valor: R$ 1000,00 por semestre 
-        <br><br><button class="inscrever">&#8594 Inscrever-se &#8592</button>
-    </p>
+            <div class="col-2,4 text-center text-monospace border border-dark bg-light ml-1 mt-1">
+                <p>Gestão Comercial
+                    <br>
+                    <img class="img" src="img/sistema-de-gestao-comercial.png">
+                    <br>&#9997; Descrição: Curso focado no planejamento financeiro, econômico e tributário das
+                    organizações,
+                    cuidar da imagem da empresa no mercado, definir estratégias de venda de produtos e serviços.
+                    <br>&#8987; Duração: 3 anos
+                    <br>💲 Valor: R$ 400,00 por mês
+                    <br><br><button class="inscrever" onclick="funcaoInscreve()">&#8594 Inscrever-se &#8592</button>
+                </p>
+            </div>
+
+            <div class="col-2,4 text-center text-monospace border border-dark bg-light ml-1 mt-1">
+                <p>Propaganda
+                    <br>
+                    <img class="img" src="img/marketing-publicidade-e-propaganda.jpg">
+                    <br>&#9997; Descrição: O curso ensina um modo específico sistemático de persuadir visando
+                    influenciar
+                    com fins ideológicos, políticos as emoções, atitudes, opiniões ou ações do público alvo.
+                    <br>&#8987; Duração: 2 anos e 7 meses
+                    <br>💲 Valor: R$ 1000,00 por semestre
+                    <br><br><button class="inscrever" onclick="funcaoInscreve()">&#8594 Inscrever-se &#8592</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <script>function funcaoInscreve()
+        {
+            alert("Inscrito com sucesso!!");
+        }
+    </script>
 
 </body>
-        <footer style="background-color: black; color:whitesmoke ; text-align:center;">&#169; Udamy Cursos Online
-            <br>&#128241; Entre em contato: (11) 5555-0123</footer>
+<div class="row"></div>
+<footer class="col" style="background-color: black; color:whitesmoke ; text-align:center; margin-top: 5px">&#169; Udamy
+    Cursos Online
+    <br>&#128241; Entre em contato: (11) 5555-0123</footer>
+</div>
+
 </html>

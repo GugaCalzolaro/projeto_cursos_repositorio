@@ -3,48 +3,12 @@
     height: 150px;
     position: relative;
 }
-.curso1{
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-.curso2{
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-.curso3{
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-.curso4{
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-.curso5{
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
 
 p{
-    border: 2px solid black;
     width: 200px;
     height: 450px;
-    display: inline-table;
-    background-color: whitesmoke;
-    margin-left:5px
-    
+    display: inline-table; 
 }
 .inscrever{
     background-color:#ff0000cc;
-}
-
-@media (max-width: 600px){
-    body{
-        text-align:center;
-    }
 }
